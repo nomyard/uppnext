@@ -10,8 +10,6 @@ import SignUp from './userUtils/SignUp';
 import SignIn from './userUtils/SignIn';
 import Settings from './userUtils/Settings';
 
-
-
 class SideBar extends Component {
   state = { visible: true }
 
