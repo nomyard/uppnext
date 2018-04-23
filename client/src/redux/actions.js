@@ -139,11 +139,11 @@ export const apiPutNotifyText = target => ({
 
 
 /*********************************************************************************************************
- *                                    R E D U C E R
+ *                                    ACTION CREATORS
  * *******************************************************************************************************/
 
 
-const reducers = store => next => async action => {
+const actions = store => next => async action => {
   next(action);
   const state = store.getState();
   switch (action.type) {
@@ -231,4 +231,4 @@ const reducers = store => next => async action => {
   }
 }
 
-export default reducers;
+export default actions;
