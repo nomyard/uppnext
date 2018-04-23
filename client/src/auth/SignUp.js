@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 import styled from 'styled-components';
-import Label from '../shared/Label';
-import FormInput from '../shared/FormInput';
+import Label from '../components//shared/Label';
+import FormInput from '../components/shared/FormInput';
 
 class SignUpForm extends Component {
   constructor(props) {
@@ -22,6 +22,11 @@ class SignUpForm extends Component {
     console.log(event.target.name);
     console.log(event.target.value)
     this.setState(obj);
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    
   }
 
   render() {
@@ -54,6 +59,7 @@ class SignUpForm extends Component {
           onChange={this.handleChange} />
 
           <FormInput required='true'
+          onSubmit={this.handleSubmit}
           txt='confirm password'
           placeholder="confirm your password"
           type='password' />

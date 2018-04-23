@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import Home from './Home';
 import Events from './eventUtils/Events';
 import EventForm from './eventUtils/EventForm';
-import SignUp from './userUtils/SignUp';
-import SignIn from './userUtils/SignIn';
-import Settings from './userUtils/Settings';
+import SignUp from '../auth/SignUp';
+import SignIn from '../auth/SignIn';
+import Settings from './Settings';
 
 class SideBar extends Component {
   state = { visible: true }
