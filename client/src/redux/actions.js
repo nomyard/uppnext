@@ -8,6 +8,11 @@ import { API_URL } from '../api';
  * 3. Action creator
  ******************************************************/
 
+const API_GET_AUTH_TOKEN = 'API_GET_AUTH_TOKEN';
+export const API_GET_AUTH_TOKEN_SENT = 'API_GET_AUTH_TOKEN_SENT';
+export const API_GET_AUTH_TOKEN_SUCCESS = 'API_GET_AUTH_TOKEN_SUCCESS';
+export const API_GET_AUTH_TOKEN_ERROR = 'API_GET_AUTH_TOKEN_ERROR';
+
 const API_GET_CONFIRM_TOKEN = 'API_GET_CONFIRM_TOKEN';
 export const API_GET_CONFIRM_TOKEN_SENT = 'API_GET_CONFIRM_TOKEN_SENT';
 export const API_GET_CONFIRM_TOKEN_SUCCESS = 'API_GET_CONFIRM_TOKEN_SUCCESS';
