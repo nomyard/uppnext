@@ -1,4 +1,4 @@
-import './actions';
+
 
 const reducers = store => next => async action => {
   next(action);
