@@ -10,7 +10,7 @@ class SignUpForm extends Component {
       fullName: '',
       emailAddress: '',
       password: '',
-      confirmPassword: '',
+      confirmPassword: '', 
     };
   }
 
