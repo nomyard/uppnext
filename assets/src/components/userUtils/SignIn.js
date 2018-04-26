@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Form } from 'semantic-ui-react';
 import styled from 'styled-components';
 import axios from 'axios';
-import cookie from 'react-cookies';
 
 class EventForm extends Component {
   constructor(props) {
@@ -24,10 +23,7 @@ class EventForm extends Component {
           'Content-Type': 'application/json',
       },
       withCredentials: true
-  }).then(resp => {
-    console.log(cookie.loadAll())
-    console.log(resp)
-  })
+  }).then(resp => console.log(resp))
   .catch(err => console.log(err))
   }
 
